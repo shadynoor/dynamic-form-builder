@@ -1,0 +1,22 @@
+{
+  "name": "dynamic-form-builder",
+  "version": "0.0.1",
+  "keywords": [
+    "form",
+    "builder",
+    "dynamic form builder",
+    "angular form builder",
+    "form builder",
+    "reactive forms angular",
+    "angular forms"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": ">=14.0.0",
+    "@angular/core": ">=14.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
