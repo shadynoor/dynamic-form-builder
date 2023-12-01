@@ -5,15 +5,19 @@
 ### Features
 
 ```js
-It Works with any type of inputs and selects and featured a custom type called `select-with-input` that gives you a div contains an input field and select to be used together ex. phone number
+It Works with any type of inputs and selects and featured a custom type
+called `select-with-input` that gives you a div contains an input field and select
+to be used together ex. phone number
 ```
 
 ```js
-If you used Input Type File you can easily get File object of your uploaded file and base64Url of this file
+If you used Input Type File you can easily get
+File object of your uploaded file and base64Url of this file
 ```
 
 ```js
-You can easily detect any changes happens in the form using formChanges EventEmitter with detectChange boolean value equals true
+You can easily detect any changes happens in the form using
+formChanges EventEmitter with detectChange boolean value equals true
 ```
 
 ### Just install it and call the DynamicFormBuilderModule inside your module or standalone component then use the component
@@ -24,6 +28,12 @@ It Works Fine For Angular v14 and upper and compatible with SSR
 
 for more Info [Angular Dynamic Form Builder Repo](https://github.com/shadynoor/dynamic-form-builder)
 for more Info [Angular Dynamic Form Builder NPM](https://www.npmjs.com/package/form-builder-dynamically)
+
+```css
+Note That All Styles Classe must be in styles.css or inside your component using :host ::ng-deep {
+  // class names
+}
+```
 
 ### Style Inputs
 
@@ -350,7 +360,10 @@ import { DynamicFormBuilderModule, FormConfig } from "dynamic-form-builder";
   }
 ```
 
-Created with love by [Shady Noor](https://github.com/shadynoor)
+Created By [Shady Noor](https://github.com/shadynoor)
+<br/>
+LinkedIn [Shady Noor](https://github.com/shadynoor)
+<br/>
 shadynoor9@gmail.com
-
+<br />
 If you can improve it just pull it and do push a PR
