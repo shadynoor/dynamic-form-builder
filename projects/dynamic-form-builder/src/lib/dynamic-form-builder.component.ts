@@ -179,7 +179,6 @@ import { FormConfig } from './form-configs.interface';
               type="button"
               (click)="imgPicker.click()"
               [innerHTML]="field.imgPickerBtnText"
-              ]
             ></button>
           </div>
 

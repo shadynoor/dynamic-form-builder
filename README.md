@@ -1,4 +1,4 @@
-# Dynamic Form Builder Angular
+# Angular Dynamic Form Builder
 
 ## Using Angular Reactive Forms Module
 
@@ -22,9 +22,7 @@ You can easily detect any changes happens in the form using formChanges EventEmi
 It Works Fine For Angular v14 and upper and compatible with SSR
 ```
 
-for more Info [Dynamic Form Builder Angular Repo](https://github.com/shadynoor9/Angular-circular-progressbar)
-
-[Demo](https://github.com/shadynoor9/Angular-circular-progressbar)
+for more Info [Angular Dynamic Form Builder Repo](https://github.com/shadynoor/dynamic-form-builder)
 
 ### Style Inputs
 
