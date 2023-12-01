@@ -4,15 +4,15 @@
 
 ### Features
 
-```css
+```js
 It Works with any type of inputs and selects and featured a custom type called `select-with-input` that gives you a div contains an input field and select to be used together ex. phone number
 ```
 
-```css
+```js
 If you used Input Type File you can easily get File object of your uploaded file and base64Url of this file
 ```
 
-```css
+```js
 You can easily detect any changes happens in the form using formChanges EventEmitter with detectChange boolean value equals true
 ```
 
