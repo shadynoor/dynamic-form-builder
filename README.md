@@ -23,6 +23,7 @@ It Works Fine For Angular v14 and upper and compatible with SSR
 ```
 
 for more Info [Angular Dynamic Form Builder Repo](https://github.com/shadynoor/dynamic-form-builder)
+for more Info [Angular Dynamic Form Builder NPM](https://www.npmjs.com/package/form-builder-dynamically)
 
 ### Style Inputs
 
