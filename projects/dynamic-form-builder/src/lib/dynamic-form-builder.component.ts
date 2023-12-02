@@ -69,6 +69,7 @@ import { FormConfig } from './form-configs.interface';
                 [minlength]="field.minLength || ''"
                 [maxlength]="field.maxLength || ''"
                 [autocomplete]="field.autocomplete"
+                [class]="inputTagClasses"
               />
               <div [class]="iconClasses" *ngIf="field.isPassword">
                 <span
@@ -120,6 +121,7 @@ import { FormConfig } from './form-configs.interface';
                 [id]="option.name"
                 [formControlName]="field.name"
                 [value]="option.value"
+                [class]="radioTagClasses"
               />
               <label [for]="option.name" *ngIf="option.name"
                 >{{ option.name }}
@@ -147,6 +149,7 @@ import { FormConfig } from './form-configs.interface';
               [name]="field.name"
               [formControlName]="field.name"
               [id]="field.id || ''"
+              [class]="checkboxTagClasses"
             />
           </div>
 
@@ -202,6 +205,7 @@ import { FormConfig } from './form-configs.interface';
               [id]="field.id || ''"
               [formControlName]="field.name"
               [value]="field.value"
+              [class]="selectTagClasses"
             >
               <option
                 *ngFor="let option of field.options"
@@ -334,6 +338,10 @@ export class DynamicFormBuilderComponent implements OnInit {
   @Input() selectWithInputClasses = ''; // control select with input
   @Input() errorAndBtnClasses = ''; // control select with input
   @Input() iconClasses = ''; // control select with input
+  @Input() inputTagClasses = ''; // each input class
+  @Input() radioTagClasses = ''; // control select with input
+  @Input() checkboxTagClasses = ''; // control select with input
+  @Input() selectTagClasses = ''; // control select with input
 
   constructor(private _fb: FormBuilder) {}
 

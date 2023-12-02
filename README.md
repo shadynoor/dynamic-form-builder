@@ -53,7 +53,10 @@ Note That All Styles Classe must be in styles.css or inside your component style
 | errorAndBtnClasses     | string | set a class or more for a div outside the form that contains div for error messages and submit button                                                                    |
 | errorMsgClasses        | string | set a class or more for a div that will contain the error message                                                                                                        |
 | buttonClasses          | string | set a class or more for the submit button                                                                                                                                |
-| iconClasses            | string | set a class or more for a div that contains icon img tag                                                                                                                 |
+| inputTagClasses        | string | set a class or more for input tag                                                                                                                                        |
+| radioTagClasses        | string | set a class or more for radio input tag                                                                                                                                  |
+| checkboxTagClasses     | string | set a class or more for checkbox input tag                                                                                                                               |
+| selectTagClasses       | string | set a class or more for select tag                                                                                                                                       |
 
 ### Text Inputs
 
