@@ -27,7 +27,6 @@ import { FormConfig } from './form-configs.interface';
             [class]="inputFieldClasses"
             class="inputField"
             *ngIf="
-              field.label &&
               field.type != 'checkbox' &&
               field.type != 'radio' &&
               field.type != 'file' &&
@@ -45,6 +44,7 @@ import { FormConfig } from './form-configs.interface';
                 field.type != 'select-with-input'
               "
               [for]="field.id || ''"
+              [class]="inputTagLabelClasses"
               >{{ field.label }}
               <span
                 [class]="requiredStarClasses"
@@ -101,6 +101,45 @@ import { FormConfig } from './form-configs.interface';
             </div>
           </div>
 
+          <!-- Textarea -->
+
+          <div
+            [class]="inputFieldClasses"
+            class="inputField"
+            *ngIf="
+              field.type != 'checkbox' &&
+              field.type != 'radio' &&
+              field.type != 'file' &&
+              field.type != 'select' &&
+              field.type != 'select-with-input'
+            "
+          >
+            <label
+            *ngIf="field.type == 'textarea'"
+              [for]="field.id || ''"
+              [class]="inputTagLabelClasses"
+              >{{ field.label }}
+              <span
+                [class]="requiredStarClasses"
+                *ngIf="field.isRequired"
+                [innerHTML]="requiredStarContent"
+              ></span
+            ></label>
+            <div class="input-with-icon">
+              <textarea
+              *ngIf="field.type == 'textarea'"
+                [name]="field.name"
+                [id]="field.id || ''"
+                [formControlName]="field.name"
+                [placeholder]="field.placeholder ? field.placeholder : ''"
+                [minlength]="field.minLength || ''"
+                [maxlength]="field.maxLength || ''"
+                [autocomplete]="field.autocomplete"
+                [class]="inputTagClasses"
+              ></textarea>
+            </div>
+          </div>
+
           <!-- *************************************** Radio Input *************************************** -->
 
           <div
@@ -108,7 +147,7 @@ import { FormConfig } from './form-configs.interface';
             class="radioField"
             [class]="radioFieldClasses"
           >
-            <label *ngIf="field.label"
+            <label *ngIf="field.label" [class]="radioTagLabelClasses"
               >{{ field.label }}
               <span [class]="requiredStarClasses" *ngIf="field.isRequired"
                 >*</span
@@ -136,7 +175,10 @@ import { FormConfig } from './form-configs.interface';
             class="checkboxField"
             [class]="checkboxFieldClasses"
           >
-            <label *ngIf="field.label && field.id" [for]="field.id || ''"
+            <label
+              *ngIf="field.label && field.id"
+              [for]="field.id || ''"
+              [class]="checkboxTagLabelClasses"
               >{{ field.label }}
               <span
                 [class]="requiredStarClasses"
@@ -160,7 +202,10 @@ import { FormConfig } from './form-configs.interface';
             [class]="fileFieldClasses"
             *ngIf="field.type == 'file'"
           >
-            <label *ngIf="field.label && field.id" [for]="field.id || ''"
+            <label
+              *ngIf="field.label && field.id"
+              [for]="field.id || ''"
+              [class]="fileTagLabelClasses"
               >{{ field.label }}
               <span
                 [class]="requiredStarClasses"
@@ -192,7 +237,10 @@ import { FormConfig } from './form-configs.interface';
             *ngIf="field.type == 'select'"
             [class]="selectFieldClasses"
           >
-            <label *ngIf="field.label" [for]="field.id || ''"
+            <label
+              *ngIf="field.label"
+              [for]="field.id || ''"
+              [class]="selectTagLabelClasses"
               >{{ field.label }}
               <span
                 [class]="requiredStarClasses"
@@ -224,7 +272,7 @@ import { FormConfig } from './form-configs.interface';
             *ngIf="field.type == 'select-with-input'"
             [class]="selectWithInputClasses"
           >
-            <label *ngIf="field.label"
+            <label *ngIf="field.label" [class]="inputWithSelectTagLabelClasses"
               >{{ field.label }}
               <span
                 [class]="requiredStarClasses"
@@ -342,6 +390,12 @@ export class DynamicFormBuilderComponent implements OnInit {
   @Input() radioTagClasses = ''; // control select with input
   @Input() checkboxTagClasses = ''; // control select with input
   @Input() selectTagClasses = ''; // control select with input
+  @Input() inputTagLabelClasses = ''; // control select with input
+  @Input() radioTagLabelClasses = ''; // control select with input
+  @Input() checkboxTagLabelClasses = ''; // control select with input
+  @Input() selectTagLabelClasses = ''; // control select with input
+  @Input() fileTagLabelClasses = ''; // control select with input
+  @Input() inputWithSelectTagLabelClasses = ''; // control select with input
 
   constructor(private _fb: FormBuilder) {}
 

@@ -39,24 +39,30 @@ Note That All Styles Classe must be in styles.css or inside your component style
 
 ### Style Inputs
 
-| Input.                 | Type   | Description                                                                                                                                                              |
-| ---------------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| formClasses            | string | set a class or more for the form tag                                                                                                                                     |
-| inputContainer         | string | set class or more for div which include the div holds label and input and shared across all input types                                                                  |
-| inputFieldClasses      | string | set a class or more for a div that contains label and input tag and this for all types of inputs except ('checkbox' , 'radio' , 'file' , 'select' , 'select-with-file')  |
-| radioFieldClasses      | string | set a class or more for a div that contains label and input type radio                                                                                                   |
-| checkboxFieldClasses   | string | set a class or more for a div that contains label and input type checkbox                                                                                                |
-| fileFieldClasses       | string | set a class or more for div that contains label, input file and button that trigger input incase you want to hide input and can by styled using parent class and the tag |
-| selectFieldClasses     | string | set a class or more for a div that contains label and select tag                                                                                                         |
-| selectWithInputClasses | string | set a class or more for a div that contains label and a another div contains select tag and input tag                                                                    |
-| requiredStarClasses    | string | set a class or more for the required \*                                                                                                                                  |
-| errorAndBtnClasses     | string | set a class or more for a div outside the form that contains div for error messages and submit button                                                                    |
-| errorMsgClasses        | string | set a class or more for a div that will contain the error message                                                                                                        |
-| buttonClasses          | string | set a class or more for the submit button                                                                                                                                |
-| inputTagClasses        | string | set a class or more for input tag                                                                                                                                        |
-| radioTagClasses        | string | set a class or more for radio input tag                                                                                                                                  |
-| checkboxTagClasses     | string | set a class or more for checkbox input tag                                                                                                                               |
-| selectTagClasses       | string | set a class or more for select tag                                                                                                                                       |
+| Input.                         | Type   | Description                                                                                                                                                              |
+| ------------------------------ | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| formClasses                    | string | set a class or more for the form tag                                                                                                                                     |
+| inputContainer                 | string | set class or more for div which include the div holds label and input and shared across all input types                                                                  |
+| inputFieldClasses              | string | set a class or more for a div that contains label and input tag and this for all types of inputs except ('checkbox' , 'radio' , 'file' , 'select' , 'select-with-file')  |
+| radioFieldClasses              | string | set a class or more for a div that contains label and input type radio                                                                                                   |
+| checkboxFieldClasses           | string | set a class or more for a div that contains label and input type checkbox                                                                                                |
+| fileFieldClasses               | string | set a class or more for div that contains label, input file and button that trigger input incase you want to hide input and can by styled using parent class and the tag |
+| selectFieldClasses             | string | set a class or more for a div that contains label and select tag                                                                                                         |
+| selectWithInputClasses         | string | set a class or more for a div that contains label and a another div contains select tag and input tag                                                                    |
+| requiredStarClasses            | string | set a class or more for the required \*                                                                                                                                  |
+| errorAndBtnClasses             | string | set a class or more for a div outside the form that contains div for error messages and submit button                                                                    |
+| errorMsgClasses                | string | set a class or more for a div that will contain the error message                                                                                                        |
+| buttonClasses                  | string | set a class or more for the submit button                                                                                                                                |
+| inputTagClasses                | string | set a class or more for input tag                                                                                                                                        |
+| radioTagClasses                | string | set a class or more for radio input tag                                                                                                                                  |
+| checkboxTagClasses             | string | set a class or more for checkbox input tag                                                                                                                               |
+| selectTagClasses               | string | set a class or more for select tag                                                                                                                                       |
+| inputTagLabelClasses           | string | set a class or more for input tag label                                                                                                                                  |
+| radioTagLabelClasses           | string | set a class or more for radio input tag label                                                                                                                            |
+| checkboxTagLabelClasses        | string | set a class or more for checkbox input tag label                                                                                                                         |
+| selectTagLabelClasses          | string | set a class or more for select tag label                                                                                                                                 |
+| fileTagLabelClasses            | string | set a class or more for file input tag label                                                                                                                             |
+| inputWithSelectTagLabelClasses | string | set a class or more for input with select tag label                                                                                                                      |
 
 ### Text Inputs
 
